@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container {
+    height: 100vh;
+    width: 100%;
+    background: rgb(237, 230, 230);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icons a{
+    display: inline-flex;
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    text-decoration: none;
+    background: rgb(255, 255, 255);
+    margin: 10px;
+    box-shadow: 0 10px 10px rgba(0,0, 0, 0.3);
+
+    background-size: 100% 200%;
+    background-position: 0% 5%;
+
+    transition: background-position 0.5s, color 0.5s;
+}
+.icons a:nth-child(1){
+    background-image: linear-gradient(white 50%, #1976d3 50%);
+    color: #1976d3;
+}
+.icons a:nth-child(2){
+    background-image: linear-gradient(white 50%, red 50%);
+    color: red;
+}
+.icons a:hover{
+    background-position: 0% 100%;
+    color: white;
+}
